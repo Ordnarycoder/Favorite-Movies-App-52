@@ -1,0 +1,95 @@
+/* Reset some basic elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7faff;
+    color: #333;
+    min-height: 100vh;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #007bff;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    background-color: #0056b3;
+    border-radius: 5px;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  /* Movies List styling */
+  .movies-view {
+    margin-top: 20px;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .movie-title {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Heart Icon styling */
+  .heart-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    user-select: none;
+  }
+  
+  .heart-icon.outline {
+    color: #ccc;
+  }
+  
+  .heart-icon.filled {
+    color: #ff4d4d;
+  }
+  
